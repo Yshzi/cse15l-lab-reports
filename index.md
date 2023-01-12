@@ -7,8 +7,8 @@ ___Hi.___
 ![here](http://url/a.png)
 > Amazing things.
 
-'Inline code' print(Hello!)
-'''
+`Inline code` print(Hello!)
+```
 # code block
 print(3)
-'''
+```
