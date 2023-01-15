@@ -9,6 +9,6 @@ Go to the Visual Studio Code website [here](https://code.visualstudio.com/). Cli
 Go through with the installation and install it onto your computer.
 
 ## Step 2:
-Great! Now you have VS Code on your computer. Open up VS Code and go to the top of the window (for mac users this will be at the very top of your screen) and click terminal then new terminal.
+Great! Now you have VS Code on your computer. Open up VS Code and go to the top of the window (for mac users this will be at the very top of your screen) and click terminal then new terminal. It should look like the image below:
 
-(![image]https://github.com/Yshzi/cse15l-lab-reports/blob/46af0e8204ca78db9ccc60b5a2b89701f99cda74/VSCodeStartScreen.jpg)
+![image](https://github.com/Yshzi/cse15l-lab-reports/blob/46af0e8204ca78db9ccc60b5a2b89701f99cda74/VSCodeStartScreen.jpg)
