@@ -10,7 +10,7 @@ Go to the Visual Studio Code website [here](https://code.visualstudio.com/). Cli
 Go through with the installation and install it onto your computer.
 
 ### Git
-For windows users, you will have to install git to logi into ieng6. For mac and linux, you should already have this installed in your computer and can proceed to [Step 2](https://github.com/Yshzi/cse15l-lab-reports/blob/46af0e8204ca78db9ccc60b5a2b89701f99cda74/VSCodeStartScreen.jpg). Go to this [link](https://git-scm.com/download/win) and install Git for windows. Follow the installation prompts and install it onto your computer.
+For windows users, you will have to install git to log into ieng6. For mac and linux, you should already have this installed in your computer and can proceed to [Step 2](https://yshzi.github.io/cse15l-lab-reports/LabReport1.html#step-2-remotely-connecting). Go to this [link](https://git-scm.com/download/win) and install Git for windows. Follow the installation prompts and install it onto your computer.
 Once you Git is installed you have to configure Git in VS Code. At the top of the window navigate to view then commnad palette. Type in "Select Default Profile" and select git bash. Now, at the top of the window navigate to terminal, then new terminal. This will open up a terminal window. In the terminal click the `+` button and a new terminal will open up in Git Bash. 
 ![image](https://github.com/Yshzi/cse15l-lab-reports/blob/d0fd1b9c4fe20b8ee98e404f3e4f645a92ac070a/Plus_Sign.jpg)
 
