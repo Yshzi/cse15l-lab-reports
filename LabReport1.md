@@ -18,30 +18,30 @@ Once git is installed you have to configure git in VS Code. Open VS Code. At the
 ## Step 2: Remotely Connecting
 Great! Now you have VS Code and git on your computer. If you do not already have these installed refer to [Step 1](https://yshzi.github.io/cse15l-lab-reports/LabReport1.html#step-1-installing-visual-studio-code-and-git). You will need to know your course specific account for CSE15L. To find this proceed to this [link](https://sdacs.ucsd.edu/~icc/index.php). Enter your UCSD username and student ID and click submit. If you don't know your username you can also proceed with the Forget Username option. 
 
-![image](https://github.com/Yshzi/cse15l-lab-reports/blob/f7c582216ad9805dfc167c59664d57f01e3888d4/AccountLookup.png)
+![image](AccountLookup.png)
 
 After looking up your account, you will need to change your password, as UCSD has a generic password already set. The reset may take a while so give it some time. Additionally take note of the accounts under **Additional Accounts.** Look for one with the similar template of cs15lwi23xxx. Note that there is a lowercase L between 5 and w not a one.
 
-![image](https://github.com/Yshzi/cse15l-lab-reports/blob/f7c582216ad9805dfc167c59664d57f01e3888d4/AdditionalAccounts.png)
+![image](AdditionalAccounts.png)
 
 Now,open up VS Code and go to the top of the window (for mac users this will be at the very top of your screen) and click terminal then new terminal. It should look similar to the image below:
 
-![image](https://github.com/Yshzi/cse15l-lab-reports/blob/f7c582216ad9805dfc167c59664d57f01e3888d4/NewTerminal.png)
+![image](NewTerminal.png)
 
 In the terminal type ```ssh cs 15wi23xxx@ieng6.ucsd.edu``` replacing the xxx with the letters associated with your account. You will then be prompted with a message asking if you want to conitnue. Type ```yes``` and hit enter. The terminal will then ask for a password. Enter your new password. Note it will look like you are not typing anything when you are. Then hit enter. If you have entered the correct password your terminal should look similar to this: 
 
-![image](https://github.com/Yshzi/cse15l-lab-reports/blob/f7c582216ad9805dfc167c59664d57f01e3888d4/RemoteServerConnection.png)
+![image](RemoteServerConnection.png)
 
 Now the terminal is connected to a computer in the CSE department. 
 
 ## Step 3: Commands
 There are many commands that you can use in your terminal to access various directories and interact with them. Here, we are going to covering a few. Try using ```pwd``` some text should appear. This command prints the working directory and shows where you are in the file system.
 
-![image](https://github.com/Yshzi/cse15l-lab-reports/blob/f7c582216ad9805dfc167c59664d57f01e3888d4/PWD.png)
+![image](PWD.png)
 
 Now try using the command ```cd ..``` and then ```pwd``` the working directory has changed. Can you see guess what ```cd ..``` did? This command stands for change directory and the ..  means to go to the parent directory. Now use the command ```ls``` this will list all the directories under cs15lwi23. In other words these are the directories of other students. 
 
-![image](https://github.com/Yshzi/cse15l-lab-reports/blob/f7c582216ad9805dfc167c59664d57f01e3888d4/Commands.png)
+![image](Commands.png)
 
 To exit out of the remote server either type the command ```exit``` or use the command ctrl + d to quit the terminal.
 
