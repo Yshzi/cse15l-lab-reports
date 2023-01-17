@@ -13,7 +13,7 @@ Go through with the installation and install it onto your computer.
 For windows users, you will have to install git to log into ieng6. For mac and linux, you should already have this installed in your computer and can proceed to [Step 2](https://yshzi.github.io/cse15l-lab-reports/LabReport1.html#step-2-remotely-connecting). Go to this [link](https://git-scm.com/download/win) and install git for windows. Follow the installation prompts and install it onto your computer.
 Once git is installed you have to configure git in VS Code. Open VS Code. At the top of the window navigate to view then commnad palette. Type in "Select Default Profile" and select git bash. Now, at the top of the window navigate to terminal, then new terminal. This will open up a terminal window. In the terminal click the `+` button and a new terminal will open up in Git Bash. 
 
-![image](https://github.com/Yshzi/cse15l-lab-reports/blob/f7f1e0fa3896cb1fe06bf029df7180ed8e20dcb4/Plus_Sign.png)
+![image](Plus_Sign.png)
 
 ## Step 2: Remotely Connecting
 Great! Now you have VS Code and git on your computer. If you do not already have these installed refer to [Step 1](https://yshzi.github.io/cse15l-lab-reports/LabReport1.html#step-1-installing-visual-studio-code-and-git). You will need to know your course specific account for CSE15L. To find this proceed to this [link](https://sdacs.ucsd.edu/~icc/index.php). Enter your UCSD username and student ID and click submit. If you don't know your username you can also proceed with the Forget Username option. 
