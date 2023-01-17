@@ -14,7 +14,7 @@ For windows users, you will have to install git to logi into ieng6. For mac and 
 
 Go to this [link](https://git-scm.com/download/win) and install Git for windows. Follow the installation prompts and install it onto your computer.
 
-Once you Git is installed you have to configure Git in VS Code. At the top of the window navigate to view then commnad palette. Type in "Select Default Profile" and select git bash 
+Once you Git is installed you have to configure Git in VS Code. At the top of the window navigate to view then commnad palette. Type in "Select Default Profile" and select git bash. Now, at the top of the window navigate to terminal, then new terminal. This will open up a terminal window. In the terminal click the `+` button and a new terminal will open up in Git Bash.
 
 ## Step 2: Remotely Connecting
 Great! Now you have VS Code on your computer. Open up VS Code and go to the top of the window (for mac users this will be at the very top of your screen) and click terminal then new terminal. It should look like the image below:
