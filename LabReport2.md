@@ -73,7 +73,7 @@ Input that doesn't induce a failure:
 ```
 Symptom: 
 
-![Ouput](TestOutput.png)
+![Ouput](TestOuput.png)
 
 Buggy Code:
 ```
