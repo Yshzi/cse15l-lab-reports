@@ -53,7 +53,7 @@ The method in the code that was called was `handleRequest(URI url)`. This method
 Similarly to the add message request above, `handleRequest(URI url)` was called. This method checks if "/add-message" was in the url and then splits up the query at the equal sign. The code then checks if the left-side matches "s" and then proceeds with appending the message on the right-side of the query into the String Builder object. This leads to the string builder object being converted into a string and displayed on the website right under Hello. This time only the query changed from the example above, which lead to a different string being appended to the website.
 
 ## Part 2
-Failure-inducing input:
+### Failure-inducing input:
 ```
   @Test
   public void testReverseInPlace1() {
@@ -62,7 +62,7 @@ Failure-inducing input:
     assertArrayEquals(new int[] {2, 1, 3}, input);
   }
 ```
-Input that doesn't induce a failure:
+### Input that doesn't induce a failure:
 ```
   @Test 
   public void testReverseInPlace() {
@@ -71,11 +71,11 @@ Input that doesn't induce a failure:
     assertArrayEquals(new int[]{ 3 }, input1);
   }
 ```
-Symptom: 
+### Symptom: 
 
 ![Ouput](TestOuput.png)
 
-Buggy Code:
+### Buggy Code:
 ```
   static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
@@ -83,7 +83,7 @@ Buggy Code:
     }
   }
 ```
-Fixed Code:
+### Fixed Code:
 ```
   static void reverseInPlace(int[] arr) {
     int[] temp = new int[arr.length];
