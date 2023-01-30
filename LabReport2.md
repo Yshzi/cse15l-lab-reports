@@ -1,5 +1,5 @@
 # **Lab Report 2 Servers and Bugs**
-In week 2 of lab, we doved into running a website locally on our own computers, and even ran a website on a remote server. The following week, week 3, we focused more on bugs, testing code, and the process of debugging it.   
+In week 2 of lab, we dove into running a website locally on our own computers, and even ran a website on a remote server. The following week, week 3, we focused more on bugs, testing code, and the process of debugging it.   
 ## Part 1
 ### Code for StringServer.java:
 ```
@@ -45,12 +45,12 @@ class StringServer {
 ### Add Message 1:
 ![hello](Hello.png)
 
-The method in the code that was called was `handleRequest(URI url)`. This method takees the url path and checks if it contains "/add-message". If the url does, the query is used to assess what the user is requesting by splitting the query at the equals sign. If the left-side of the query is "s" the code continues and appends the right-side of the query to a String Builder object. A newline character follows the appended string so that any words after will be appended onto a new line. This allows for the message from the user to be displayed on the website. The values that changed from the domain site was the path and query which led to a string being appened. 
+The method in the code that was called was `handleRequest(URI url)`. This method takes the url path and checks if it contains "/add-message". If the url does, the query is used to assess what the user is requesting by splitting the query at the equals sign. If the left-side of the query is "s" the code continues and appends the right-side of the query to a String Builder object. A newline character follows the appended string so that any words after will be appended onto a new line. This allows for the message from the user to be displayed on the website. The values that changed from the domain site was the path and query which led to a string being appened. 
 
 ### Add Message 2:
 ![greeting](HowAreYou.png)
 
-Similarly to the add message request above, `handleRequest(URI url)` was called. This method checks if "/add-messgae" was in the url and then splits up the query at the equal sign. The code then checks if the left-side is matches "s" and then proceeds with appending the message on the right-side of the query into the String Builder object. This leads to the string builder object being converted into a string and displayed on the website right under Hello. This time only the query changed from the example above, which lead to a different string being appended to the website.
+Similarly to the add message request above, `handleRequest(URI url)` was called. This method checks if "/add-message" was in the url and then splits up the query at the equal sign. The code then checks if the left-side matches "s" and then proceeds with appending the message on the right-side of the query into the String Builder object. This leads to the string builder object being converted into a string and displayed on the website right under Hello. This time only the query changed from the example above, which lead to a different string being appended to the website.
 
 ## Part 2
 Failure-inducing input:
