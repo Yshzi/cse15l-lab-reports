@@ -82,7 +82,7 @@ travel_guides/berlitz1//WhatToIndia.txt:280:        couple of kilos, they’ll s
 ```
 Here, we used -nr because we used the filepath of a directory and thus with only -n we would get a message saying that the path is a directory. However, by also using the recursive modifier -r we were able to look into the directory and see that another line, 901 was printed in WhereToIndia.txt. This is interesting as grep did not see this before with the direct file path and only -n but now it found another line with "kilos" in it. By using -r perhaps we can search more deeply for a certain string in the desired filepath.
 ### grep -i (string) (filepath)[^1]
-The -i modifier stands for ignore case so the any lines that contain the string will be printed whether or not the letters are capitalized or not.
+The -i modifier stands for ignore case so any lines that contain the string will be printed whether or not the letters are capitalized or not.
 #### Command:
 ```
 grep -i  "Two"  non-fiction/OUP/Berk/ch7.txt
@@ -131,7 +131,7 @@ non-fiction/OUP/Rybczynski//ch1.txt:A number of years ago I accompanied the arch
 ```
 By using recursive and ignore case we are able to look through the directory and find any lines that contain "classical" ignoring the case. Therefore we can find all instances of classical whether they have a capital "C" at the beginning or not.
 ## Conclusion
-Grep has many useful modifiers that can exapand its already useful default capabilities. By learning more about the different modifiers that we can attach to commands, the better we can use them to our advantage. There are modifiers for almost every command so we just have to learn them and use them. Some useful resources to learn more about commands and their modifiers is man then the command. The command man stands for manual and will output a manual that details modifiers and what a certain command is used for. Additionally there is a lot of documentation online that can help one to understand how a function works. Happy coding!
+```grep``` has many useful modifiers that can expand its already useful default capabilities. By learning more about the different modifiers that we can attach to commands, the better we can use them to our advantage. There are modifiers for almost every command so we just have to learn them and use them. Some useful resources to learn more about commands and their modifiers is man then the command. The command ```man``` stands for manual and will output a manual that details modifiers and what a certain command is used for. Additionally there is a lot of documentation online that can help one to understand how a function works. Happy coding!
 [^1]: https://qpeng.org/computer/grep.htm
 [^2]: https://linuxhandbook.com/grep-search-all-files-directories/#:~:text=You%20can%20make%20grep%20search,grep%20%2Dr%20search_term%20.
 
