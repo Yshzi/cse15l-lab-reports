@@ -60,26 +60,29 @@ When grep -c is used on a directory it is unable to search for the string and
 thus gives a message to the user. If we combined the recursive modifier and 
 used grep -rc we would be able to look through the directory and have the 
 same output as grep -c "Finally" non-fiction/OUP/Rybczynski/*.txt.
-### grep -x (string) (filepath)[^1]
-The -x modifier for grep makes it so the string entered has to exactly match instead of just having to contain the string.
+### grep -n (string) (filepath)[^1]
+The -n modifier for grep makes it so the line number that the string was matched to is printed as well as the contents of that line.
 #### Command:
 ```
-
+grep -n "kilos" travel_guides/berlitz1/WhatToIndia.txt 
 ```
 #### Output:
 ```
-
+280:        couple of kilos, they’ll ship it for you in air-tight packages.
 ```
+The line is being printed as well as its line number. This command can be useful when we want to know specifically where something is in a file and thus we can reference the line that it is at to get more context.
+#### Command:
+```
+grep -nr "kilos" travel_guides/berlitz1/
+```
+#### Output:
+```
+travel_guides/berlitz1//WhereToIndia.txt:901:        separate lots of five kilos each: “three, three, three,” “four, four,
+travel_guides/berlitz1//WhatToIndia.txt:280:        couple of kilos, they’ll ship it for you in air-tight packages.
+```
+Here, we used -nr because we used the filepath of a directory and thus with only -n we would get a message saying that the path is a directory. However, by also using the recursive modifier -r we were able to look into the directory and see that another line, 901 was printed in WhereToIndia.txt. This is interesting as grep did not see this before with the direct file path and only -n but now it found another line with "kilos" in it. By using -r perhaps we can search more deeply for a certain string in the desired filepath.
 ### grep -i (string) (filepath)[^1]
 The -i modifier stands for ignore case so the any lines that contain the string will be printed whether or not the letters are capitalized or not.
-#### Command:
-```
-
-```
-#### Output:
-```
-
-```
 ## Conclusion
 Grep has many useful modifiers that can exapand its already useful default capabilities. By learning more about the different modifiers that we can attach to commands, the better we can use them to our advantage. There are modifiers for almost every command so we just have to learn them and use them. Some useful resources to learn more about commands and their modifiers is man then the command. The command man stands for manual and will output a manual that details modifiers and what a certain command is used for. Additionally there is a lot of documentation online that can help one to understand how a function works. Happy coding!
 [^1]: https://qpeng.org/computer/grep.htm
