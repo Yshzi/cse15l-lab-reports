@@ -86,12 +86,11 @@ Similarly to the add message request above, `handleRequest(URI url)` was called.
 ### Fixed Code:
 ```
   static void reverseInPlace(int[] arr) {
-    int[] temp = new int[arr.length];
-    for (int i = 0; i < arr.length; i += 1) {
-      temp[i] = arr[arr.length - 1 - i];
-    }
-    for (int i = 0; i < arr.length; i += 1){
-      arr[i] = temp[i];
+    int temp;
+    for (int i = 0; i < arr.length/2; i += 1) {
+      temp = arr[i];
+      arr[i] = arr[arr.length - 1 - i];
+      arr[arr.length - 1 - i] = temp;
     }
   }
 ```
